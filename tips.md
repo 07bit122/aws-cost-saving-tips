@@ -148,8 +148,7 @@ S3 Lifecycle policies are the cornerstone of S3 cost management. They are rules 
 
 The following JSON configuration defines a lifecycle policy for a bucket. It transitions objects with the logs/ prefix through various storage classes and eventually expires them. It also cleans up incomplete multipart uploads and old object versions for the entire bucket.
 
-JSON
-
+```JSON
 {  
     "Rules":,  
             "Expiration": {  
@@ -174,6 +173,7 @@ JSON
         }  
     \]  
 }
+```
 
 Source: 24
 
